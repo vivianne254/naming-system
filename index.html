@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/CSS/styles.css" type="text/css">
+    <title>Akan-Name</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="my-container">
+
+        <div class="navigate">
+          <h1>THE AKAN NAMES</h1>
+          
+          
+        </div>  
+        <div class="container">
+          <p id="para1">This is a web application that takes user's birthday and calculates the day
+              of the week they were born and then depending on their gender outputs their Akan names.
+          </p> 
+          <form id="form1">
+            <div class="form-group row">
+              <label for="dateOfBirth" class="col-sm-3" col-form-label>Enter your birthday</label>
+              <div class="col-sm-9">
+                <input type="date" class="form-control" id="dateOfBirth">
+              </div>
+            </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-3 pt-0">Choose your gender</legend>
+            <div class="col-sm-9">
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="maleGender" value="option1" name="custom-radio">
+                <label class="custom-control-label" for="maleGender">
+                  Male
+                </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="femaleGender" value="option2" name="custom-radio">
+                <label class="custom-control-label" for="femaleGender">
+                  Female
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <button type="button" class="btn btn-primary" id="button1" onclick="dateOfWeek();">Submit</button>
+      </form>
+      <p class="output" id="akanOutput"></p>
+      </div>
+    </div>
+    
+  </div>
+  <script src="/JS/script.js"></script>   
+  </body>
+  </html>
